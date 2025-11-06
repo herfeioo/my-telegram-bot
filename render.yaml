@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: telegram-bot
+    name: tiza-film-bot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
-      TOKEN:
+      BOT_TOKEN:
         fromSecret: BOT_TOKEN
